@@ -1,0 +1,265 @@
+body{
+	background-color: #eeeeee;
+}
+
+.search-form{
+	display:flex;
+	justify-content: center;
+	width:60%;
+
+}
+
+
+.search-bar-container{
+	z-index: 1000;
+	justify-content: center;
+	display: flex;
+	background-color:#ffe600;
+	position:fixed;
+	padding:7px;
+	top:0;
+	left: 0;
+	text-align: center;
+	height: 54px;
+	width:100%;
+	/*line-height: 20px;*/
+	font-family:Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size:18px;
+	/*vertical-align: baseline;*/
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;     
+}
+
+.ml-logo{
+	width:53px;
+	height: 36px;
+	margin-right: 25px; 
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image:url("./Assets/Logo_ML.png");
+	/*margin: auto;*/
+
+	align-self: flex-start;
+}
+
+
+.search-input{
+	align-self: flex-start;
+	/*margin:auto;*/
+	height: 40px;
+	flex-grow: 1;
+	/*width:100%;*/
+	padding-right: 60px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	box-shadow: none;
+	text-align: start;
+	text-indent: 0px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;     
+}
+
+.search-btn{
+	align-self: flex-start;
+	/*margin:auto;*/
+	background-image:url(./Assets/ic_Search.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    cursor:pointer;
+    height: 40px;
+    width:46px;
+}
+
+.list-item-container {
+	/*background-color: #eeeeee;*/
+	/*margin-top:40px;*/
+	padding: 0;
+	list-style-type: none;
+}
+
+.item-details-picture {
+	width:680px;
+	height: 680px;
+	/*display: inline-block;*/
+	margin-right: 16px;
+}
+
+.search-results-container, .item-details-container {
+	background-color: #eeeeee;
+	margin-top:54px;
+	width:60%;
+	margin-left: 20%;
+}
+
+.item-details-container {
+	background-color: white;
+	padding: 32px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+
+}
+
+.item-details-upper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.item-list{
+	display: flex;
+	background-color: white;
+	border-color:blue;
+	cursor: pointer;
+	justify-content: flex-start;
+	/*border-width: 1px;*/
+/*	border-bottom: 1px solid;
+	border-spacing: */
+}
+
+.place {
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size:18px;
+	margin:auto;
+}
+
+.item-list-container{
+	position: relative;
+}
+
+.item-list::after{
+    content: "";
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+    height: 1px;
+    width: 94.5%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.item-list span{
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size:18px;
+}
+
+.item-info-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 45%;
+
+}
+
+.item-info-price {
+	display: flex;
+	width:600px;
+}
+
+.item-info-price span, .item-info-price div{
+	margin: 32px 0px;
+
+}
+
+.item-info-price span{
+	font-size:24px;
+	margin-right: 15px;
+}
+
+.item-details-price-container {
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color:#333333;
+	display: flex;
+	flex-direction: column;
+	margin-top: 32px;
+	width:30%;
+}
+
+.item-details-condition{
+	font-size:14px;
+}
+
+.item-details-title{
+	margin-top: 16px;
+	font-size:24px;
+	font-weight: bold;
+	margin-bottom: 32px;
+}
+
+.item-details-price{
+	font-size:46px;
+	margin-bottom: 32px;
+
+}
+
+.item-details-buy {
+	margin-right: 32px;
+	background-color: #3483fa;
+	height: 40px;
+	line-height: 40px;
+	width:100%;
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	text-align: center;
+	color:white;
+	border-radius: 4px;
+}
+
+.item-details-description {
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color:#333333;
+}
+
+.item-details-description p{
+	font-size:28px;
+}
+
+.item-details-description div{
+	font-size:16px;
+}
+
+
+.item-list-image{
+	height: 180px;
+	width:180px;
+	border-radius:4px;
+	margin:16px;
+}
+
+.free-sheeping-image {
+	background-image:url(./Assets/ic_shipping.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	width: 24px;
+	height: 24px;
+}
+
+ul.breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+    background-color: #eeeeee;
+    font-size: 17px;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #999999;
+    content: ">";
+}
+ul.breadcrumb li span {
+    color: #999999;
+    text-decoration: none;
+    font-size:14px;
+}
+
+ul.breadcrumb li span.active {
+    color: #666666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.breadcrumb li span:hover {
+    color: #999999;
+    cursor: pointer;
+    text-decoration: underline;
+}
