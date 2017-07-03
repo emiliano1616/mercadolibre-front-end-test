@@ -1,4 +1,17 @@
+﻿Para correr el cliente:
+npm install
+npm start
+
+El cliente correra en el puerto 3000
+
+Para correr el server
+npm install
+node index.js
+
+El server correra en el puerto 3001
+
 Asunciones sobre el documento funcional
+
 1)No se encontro informacion en la documentacion que indique de donde obtener el campo author en las llamadas a la API. Frente a esto, se asumio llenarlo con los datos del autor del codigo (Emiliano Tortorelli).
 
 2)El listado de categorias no siempre retorna valores. Esto depende de lo que se indique en el campo de busqueda. Observando la pagina de mercadolibre.com, se noto que esto tambien sucede. Debido a esto, solo se vera el breadcrumb de categorias cuando las hubieren.
