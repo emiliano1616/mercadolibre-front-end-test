@@ -1,16 +1,16 @@
-﻿Para correr el cliente:
-npm install
-npm start
+Para correr el cliente: <br/>
+npm install<br/>
+npm start<br/>
 
-El cliente correra en el puerto 3000
+El cliente correra en el puerto 3000<br/>
 
-Para correr el server
-npm install
-node index.js
+Para correr el server<br/>
+npm install<br/>
+node index.js<br/>
 
-El server correra en el puerto 3001
+El server correra en el puerto 3001<br/>
 
-Asunciones sobre el documento funcional
+Asunciones sobre el documento funcional<br/>
 
 1)No se encontro informacion en la documentacion que indique de donde obtener el campo author en las llamadas a la API. Frente a esto, se asumio llenarlo con los datos del autor del codigo (Emiliano Tortorelli).
 
